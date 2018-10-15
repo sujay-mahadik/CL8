@@ -21,21 +21,21 @@ public class Railway System {
     /**
      * 
      */
-    private void response() {
+    public void response() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    private void verifyPayment() {
+    public void verifyPayment() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    private void triggerRefund() {
+    public void triggerRefund() {
         // TODO implement here
     }
 

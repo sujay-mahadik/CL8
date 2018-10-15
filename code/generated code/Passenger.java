@@ -39,35 +39,35 @@ public class Passenger {
     /**
      * 
      */
-    private void searchTrain() {
+    public void searchTrain() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    private void bookTicket() {
+    public void bookTicket() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    private void cancelTicket() {
+    public void cancelTicket() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    private void payCharges() {
+    public void payCharges() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    private void modifyProfile() {
+    public void modifyProfile() {
         // TODO implement here
     }
 
