@@ -12,35 +12,39 @@ public class Passenger {
     public Passenger() {
     }
 
+    static RailwaySystem sys = new RailwaySystem();
     /**
      * 
      */
-    private void name;
-
-    /**
-     * 
-     */
-    private void address;
+    private String name;
 
     /**
      * 
      */
-    private void age;
+    private String address;
 
     /**
      * 
      */
-    private void gender;
-
-
-
-
+    private int age;
 
     /**
      * 
      */
-    public void searchTrain() {
+    private String gender;
+
+    /**
+     * 
+     */
+    public static String searchTrain() {
         // TODO implement here
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the train number:");
+        int trainNo;
+        trainNo = in.nextInt();
+        String train;
+        train = sys.returnTrain(trainNo);
+        return train;
     }
 
     /**
@@ -71,4 +75,9 @@ public class Passenger {
         // TODO implement here
     }
 
+    public static void main(String[] args) {
+
+        String train = searchTrain();
+        System.out.println(train);
+    }
 }
