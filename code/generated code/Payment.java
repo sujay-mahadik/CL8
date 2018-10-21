@@ -6,21 +6,16 @@ import java.util.*;
  */
 public class Payment {
 
-    /**
-     * Default constructor
-     */
     public Payment() {
     }
 
-    /**
-     * 
-     */
-    protected void transactionID;
+    public static int transactionID;
 
-    /**
-     * 
-     */
-    public void amount;
+    public static void makePayment(int amount) {
+        Random rnd = new Random();
+        transactionID = 1000 + rnd.nextInt(9000);
 
-
+        System.out.println("\n_________________________\nPayment Successful with:\nTID: " + transactionID + "\nAmount: "
+                + amount + "\n_________________________");
+    }
 }

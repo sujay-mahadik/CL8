@@ -6,40 +6,32 @@ import java.util.*;
  */
 public class Ticket {
 
-    /**
-     * Default constructor
-     */
     public Ticket() {
     }
 
-    /**
-     * 
-     */
-    public void pnrNo;
+    public static int pnrNo;
 
-    /**
-     * 
-     */
-    public void status;
+    public static String status;
 
-    /**
-     * 
-     */
-    public void noOfPassengers;
+    public static String trainName;
 
+    public static int noOfPassengers;
 
-    /**
-     * 
-     */
-    public void newTicket() {
-        // TODO implement here
+    public void newTicket(int trainNo, int pass) {
+        Random rnd = new Random();
+        int n = 100000 + rnd.nextInt(900000);
+
+        System.out.println();
     }
 
-    /**
-     * 
-     */
-    public void deleteTicket() {
-        // TODO implement here
+    public void printTicket(int t, int p, int a) {
+        System.out.println("\n_________________________\nTicket\n_________________________\nTrain no: " + t
+                + "\nNo of passengers: " + p + "\nAmout: " + a + "\n_________________________");
+    }
+
+    public void deleteTicket(int t, int a) {
+        System.out.println("\n_________________________\nCancelled ticket\n_________________________\nTrain no: " + t
+                + "\nAmout refund: " + a + "\n_________________________");
     }
 
 }

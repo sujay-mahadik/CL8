@@ -6,29 +6,18 @@ import java.util.*;
  */
 public class RailwaySystem {
 
-    /**
-     * Default constructor
-     */
     public RailwaySystem() {
     }
 
-    /**
-     * 
-     */
+    Train trainData = new Train();
+
     public void railwayZone() {
 
     }
 
-    /**
-     * 
-     */
     public String returnTrain(int num) {
         String toReturn = "";
-
-        if (num == 1) {
-            toReturn = "Shatabdi Express";
-
-        }
+        toReturn = trainData.returnTrainName(num);
         return toReturn;
     }
 
@@ -36,69 +25,20 @@ public class RailwaySystem {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void verifyPayment() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void triggerRefund() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void login() {
         // TODO implement here
     }
 
-    /**
-     * 
-     */
     public void validate() {
         // TODO implement here
     }
-
-    /**
-     * 
-     */
-    // public void request
-    // Ticket booking
-
-    // form() {
-    // // TODO implement here
-    // }
-
-    // /**
-    // *
-    // */
-    // public void create
-
-    // form() {
-    // // TODO implement here
-    // }
-
-    // /**
-    // *
-    // */
-    // public void Submit
-
-    // Details() {
-    // // TODO implement here
-    // }
-
-    // /**
-    // *
-    // */
-    // public void Create
-
-    // Ticket() {
-    // // TODO implement here
-    // }
 
 }
